@@ -1,128 +1,145 @@
 @extends('layouts.default')
 @section('title')
-    <title>Osman Goni Chowdhury - Full-Stack Developer</title>
+    <title>Ahsanul Haque Farhan - Full-Stack Developer</title>
 @endsection
+
+@php
+        $skills = [
+        [
+               "title" => "Vue js",
+               "link" => "https://vuejs.org/",
+               "description" => "Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. ",
+               "image" => "https://vuejs.org/images/logo.svg",
+        ],
+        [
+               "title" => "Laravel",
+               "link" => "https://laravel.com/",
+               "description" => "Laravel is a web application framework with expressive, elegant syntax. It provides a structure and starting point for creating your application.",
+               "image" => "https://laravel.com/img/logomark.min.svg",
+        ],
+        [
+               "title" => "React js",
+               "link" => "https://reactjs.org/",
+               "description" => "React is a JavaScript library for building user interfaces.Learn Once, Write Anywhere.React can also render on the server using Node and power mobile apps using React Native.",
+               "image" => "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
+        ],
+        [
+               "title" => "CodeIgniter",
+               "link" => "https://codeigniter.com/",
+               "description" => "CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications.",
+               "image" => "https://codeigniter.com/assets/images/ci-logo-big.png",
+        ],
+        [
+               "title" => "Bootstrap",
+               "link" => "https://getbootstrap.com/",
+               "description" => "Bootstrap is the CSS Framework.It contains CSS- and JavaScript-based design templates.",
+               "image" => "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+        ],
+        [
+               "title" => "MySQL",
+               "link" => "https://www.mysql.com/",
+               "description" => "MySQL is an open-source relational database management system.",
+               "image" => "https://upload.wikimedia.org/wikipedia/commons/b/b2/Database-mysql.svg",
+        ],
+    ];
+
+    $projects = [
+        [
+            'image' => '/assets/images/gif/falcon.gif',
+            'title' => 'Falcon-React',
+            'description' => 'specialised in frontend and backend development for complex scalable web apps and websites.'
+        ],
+        [
+            'image' => '/assets/images/gif/falcon.gif',
+            'title' => 'Falcon-React',
+            'description' => 'specialised in frontend and backend development for complex scalable web apps and websites.'
+        ]
+    ];
+@endphp
 
 @section('content')
     <div class="main-content mt-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                    <h2 class="fw-bolder">MY PURPOSE</h2>
-                    <p>A <span class="text-danger fw-bold">full stack web application developer</span> specialized in
-                        both
-                        <span
-                            class="fw-bold">front-end</span> and <span class="fw-bold">back-end</span>.</p>
-                    <div class="mt-1">I have <span class="fw-bold">maintained, developed and launched</span> multiple
+              <div>
+                <div class="introduction">
+                    <h1 class="heading-underline heading-underline-2 text-900">Hey <span class="text-main">there!</span> </h1>
+                    <p class="mt-2 text-justify">
+                        I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps and websites.
+                        I have worked with various technologies most of them are based on <span class="fw-bold">PHP</span> and <span class="fw-bold">Javascript.</span>
+                         I have <span class="fw-bold">maintained, developed and launched</span> multiple
                         projects
                         from scratch, carrying the development of it's
                         <span class="fw-bold">back-end</span> and <span class="fw-bold">front-end</span> codebases.
+                    </p>
+                </div>
+                <div class="skills mt-6">
+                    <h1 class="heading-underline heading-underline-2 text-900">Skills <span class="text-main">Overview</span> </h1>
+                     <p class="mt-2 text-justify">
+                         Below is a quick overview of my main technical skill sets and tools I use.
+                     </p>
+                    <div class="row justify-content-between mt-5">
+                        @foreach($skills as $key => $skill)
+                        <div class="col-xl-5 col-md-6 mb-5">
+                            @if($key == 0)
+                            <span class="badge badge-soft-dark px-4 py-2 fs-0 mb-4 ls text-900 shadow">Frontend</span>
+                            @elseif($key == 1)
+                            <span class="badge badge-soft-dark px-4 py-2 fs-0 mb-4 ls text-900 shadow">Backend</span>
+                            @endif
+                            <div class="media">
+                                <img class="align-self-start mr-3" src="{{$skill['image']}}" alt="..." width="70">
+                                <div class="media-body">
+                                <h5 class="font-weight-bold">{{$skill['title']}}</h5>
+                                <p class="text-justify">{{$skill['description']}}</p>
+                                <a class="text-main font-weight-bold" href="{{$skill['link']}}">View Documentation <span class="fas fa-chevron-right" data-fa-transform="down-2 shrink-5 right-4"></span>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
                     </div>
-                    <div class="mt-3">
-                        <p>
-                            My current toolset includes <span class="fw-bold">Laravel</span> and <span
-                                class="fw-bold">Vuejs</span>,Vuex, React and other various libraries & technologies
-                            related to them.
-                        </p>
+                </div>
+
+                <div class="hire-me mt-6">
+                    <h1 class="heading-underline heading-underline-2 text-900">My <span class="text-main">Portfolio</span> </h1>
+                     <p class="mt-2 text-justify">
+                       I can help you in Your project by
+                     </p>
+                     <div class="mt-6">
+                     <div class="row">
+                         @foreach ($projects as $project)
+                            <div class="col-sm-6 col-lg-6 mb-4">
+                                <div class="hoverbox rounded-soft text-center">
+                                    <img class="img-fluid" src="{{url($project['image'])}}" alt="" />
+                                    <div class="hoverbox-content bg-dark p-5 self-center">
+                                        <div>
+                                            <h5 class="text-white">{{ $project['title'] }}</h5>
+                                            <p class="lead text-white fs--1">{{ $project['description'] }}</p>
+                                            <a class="btn btn-light btn-sm mt-1" href="#!">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
                     </div>
-                    <div class="mt-3">
-                        <p class="fw-bolder">
-                            I can help you in your project by:
-                        </p>
-                        <ul>
+                </div>
+
+                <div class="hire-me mt-6">
+                    <h1 class="heading-underline heading-underline-2 text-900">Hire <span class="text-main">Me!</span> </h1>
+                     <p class="mt-2 text-justify">
+                       I can help you in Your project by
+                     </p>
+                     <div class="mt-6">
+                        <h3 class="mb-0 fs-xl-4 fs-sm-3 font-weight-thin">
+                            I can help you in <span class="text-main">Your project by</span>
+                        </h3>
+                         <ul class="mt-3">
                             <li>Developing or co-developing back-end & front end.</li>
                             <li>Monitoring or supporting projects.</li>
                             <li>Updating existing codebase.</li>
                             <li>Fixing major and minor bugs.</li>
                         </ul>
-                        <p>I am open to work on exciting applications followed by discussing project requirements & any
-                            other technologies.</p>
                     </div>
-                    <hr class="my-5">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10">
-                    <h3 class="text-danger">
-                        <i class="far fa-edit"></i>
-                        <span class="fw-bold">FRONT-END ENGINEERING</span>
-                    </h3>
-                    <div class="mt-3">
-                        I am specialized in applications written in <span class="fw-bold">Vue & Vuex</span>. Recently
-                        I am becoming also a huge fan of <span class="text-danger">React</span>.
-                    </div>
-                    <div class="mt-3">My current experience and skills in front-end includes:</div>
-                    <ul class="mt-3">
-                        <li>
-                            Building multiple Single Page Applications with VueJs & ReactJs.
-                        </li>
-                        <li>
-                            Integrating front-end with pre-build API.
-                        </li>
-                        <li>
-                            Collaborate closely with the design, engineering, and product team to create the best
-                            experience for the user.
-                        </li>
-                        <li>
-                            Translate design into standard and maintainable code with ensuring the best coding practice.
-                        </li>
-                        <li>
-                            Optimizing components for maximum performance across a vast array of web-capable devices and
-                            browsers.
-                        </li>
-                    </ul>
-                    <hr class="my-5">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10">
-                    <h3 class="text-danger">
-                        <i class="fas fa-code"></i>
-                        <span class="fw-bold">BACK-END ENGINEERING</span>
-                    </h3>
-                    <div class="mt-3">
-                        In <span class="fw-bold">back-end development</span>, my current stack involves <span
-                            class="text-danger-pro">Laravel
-                        framework</span>, and alternatively I also worked in <span
-                        <span class="text-danger-pro">Shopify</span>.
-                    </div>
-                    <div class="mt-3">Nearly every app I have launched in the past had the back-end also done by me. In
-                        order to improve the development speed, performance and reliability,
-                        I have tried different methodologies and implementation strategies.
-                    </div>
-
-                    <div class="mt-2">The lessons I learned by doing all these apps will be useful for me forever, no
-                        matter what framework I will use in the next project.
-                    </div>
-
-                    <div class="mt-3">What I can do at that side is:</div>
-                    <ul class="mt-3">
-                        <li>Contribute architecting database schemas and API.</li>
-                        <li>Building and deploying applications using version control system like Git.</li>
-                        <li>Writing optimized SQL queries.</li>
-                        {{--<li>Work as a member of agile teams collaborating with other developers, product managers and designs. </li>
-                        <li>Creative problem solving and effective communication in-person, over email, Slack, Trello, Google docs etc.</li>
-                        <li>Efficient use of project management tools like Trello, Asana, Jira etc.</li>--}}
-                    </ul>
-                    <hr class="my-5">
-                </div>
-            </div>
-            <div class="row mb-5">
-                <div class="col-md-10">
-                    <h3 class="text-danger">
-                        <i class="fas fa-satellite-dish"></i>
-                        <span class="fw-bold">What about Other Perks</span>
-                    </h3>
-                    <div class="mt-3">
-                        Often I also had to care about other things needed in a successful web application project:
-                    </div>
-
-                    <ul class="mt-3">
-                        <li>Good planing of UI and thinking how it affects the UX.</li>
-                        <li>Consistency & design typography.</li>
-                        <li>Deploy the project into Linux cloud server.</li>
-                        <li>Monitoring the app after the release.</li>
-                    </ul>
                 </div>
             </div>
         </div>

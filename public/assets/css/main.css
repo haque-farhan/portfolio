@@ -321,7 +321,7 @@ body {
     border-radius: 20px !important;
 }
 .rounded-soft {
-    border-radius: 1.75rem !important;
+  border-radius: 0.375rem !important;
 }
 .field-sm {
     height: 35px;
@@ -960,4 +960,55 @@ body {
 .ml-11,
 .mx-11 {
     margin-left: 15rem !important;
+}
+
+
+/*-----------------------------------------------
+|   Hover Box
+-----------------------------------------------*/
+.hoverbox {
+  position: relative;
+  overflow: hidden;
+}
+
+.hoverbox .hoverbox-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  margin: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hoverbox .hoverbox-primary-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.hoverbox:hover .hover-box-content-initial, .hoverbox:focus .hover-box-content-initial {
+  opacity: 0;
+}
+
+.hoverbox:hover .hoverbox-content, .hoverbox:focus .hoverbox-content {
+  opacity: 1;
+}
+
+.hoverbox:hover .as-hoverbox-content, .hoverbox:focus .as-hoverbox-content {
+  z-index: 1;
+}
+
+.hoverbox-content-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
+  background: -o-linear-gradient(transparent, #000);
+  background: linear-gradient(transparent, #000);
 }
