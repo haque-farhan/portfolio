@@ -18,33 +18,38 @@
       "image" => "/assets/images/gradnet_full.png"
     ],
     [
-      "title" => "Smart College Automation System",
-      "sub_title" => "Smart college solution enables educational institutions virtually accessible for 24/7 and step ahead to paperless college management system.",
-      "description" => "",
+      "title" => "Smart College Automation",
+      "sub_title" => "Paperless college management system.",
+      "description" => "Smart college solution enables you to do things online effortlessly. A simple way to schedule class, assessment, assignment, exam and measure performance.Some features below",
       "bullet_points" => [
-        "Online Admission Solution.",
-        "Result Processing Solution.",
+        "Online Admission",
+        "Library Management",
+        "Result Processing System",
+          "Advanced Exam Module",
+        "Advanced Assignment Module",
+        "Measure Student Performance",
         "Mobile-friendly Dynamic Website.",
-        "Advanced Exam Module & Student Management.",
-        "Live Class via Youtube & Schedule Recorded Class."
+        "Live Class & Schedule Recorded Class."
       ],
       "link" => "https://demo.smartcollegebd.com/",
       "technologies" => ["Laravel", "Bootstrap4", "MySQL"],
-      "image" => "/assets/images/smart-college.png"
+      "image" => "/assets/images/smartcollege_full.png"
     ],
     [
-      "title" => "Falcon – Admin Dashboard & WebApp Template (VueJs)",
-      "sub_title" => "",
+      "title" => "Falcon – Admin Dashboard & WebApp Template (React)",
+      "sub_title" => "Falcon – Admin Dashboard & WebApp Template React, built for you to create outstanding UI faster than ever before",
       "description" => "Create a UI that stands out — a design that is beautiful, slick, and delivers the ultimate user experience. Start with Falcon, streamline your UI design.",
       "bullet_points" => [
-        "Fully Responsive.",
-        "Modular markup based on Cards & Utility classes.",
-        "Include an article or upload a paper.",
-        "Interactive graphs and charts.",
+        "Fully Responsive",
+        "Outstanding UI ",
+        "React hooks for state management",
+        "Higher-order component",
+        "Reactstrap",
+        "React Context API",
       ],
       "link" => "",
-      "technologies" => ["Vue"],
-      "image" => "/assets/images/falcon.png"
+      "technologies" => ["React", "Reactstrap"],
+      "image" => "/assets/images/falcon_full.png"
     ],
 ];
 @endphp

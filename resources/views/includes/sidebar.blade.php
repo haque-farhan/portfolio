@@ -10,16 +10,16 @@
 <div class="navbar navbar-expand-md sticky-top sidebar overflow-auto scrollbar">
     <div class="navbar-brand d-md-none">
         <div class="mb-2 fs-5 text-white px-2">
-            <a href="mailto:rafi.ogchy@gmail.com" class="social-link mx-1">
+            <a href="mailto:farhanhaque.lu@gmail.com" class="social-link mx-1">
                 <i class="fas fa-envelope"></i>
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/osman52/" class="social-link mx-1">
+            <a target="_blank" href="https://www.linkedin.com/in/ahsanul-haque-farhan-90052619b/" class="social-link mx-1">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a target="_blank" href="https://github.com/Osman-Rafi" class="social-link mx-1">
+            <a target="_blank" href="https://github.com/haque-farhan" class="social-link mx-1">
                 <i class="fab fa-github-square"></i>
             </a>
-            <a target="_blank" href="https://www.facebook.com/osman.rafi140/" class="social-link mx-1">
+            <a target="_blank" href="https://www.facebook.com/ahsanulf" class="social-link mx-1">
                 <i class="fab fa-facebook-square"></i>
             </a>
         </div>
@@ -28,15 +28,16 @@
         <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse flex-column text-center " id="sidebarCollapse">
-        <div class=" text-white mt-4 d-none d-md-block">
-            <img src="{{url('/assets/images/farhan.jpg')}}" alt="profile picture"
-                 style="width: 45%" class="img-fluid rounded-soft">
-            <h4 class="mt-4 ">
-               Ahsanul Haque Farhan
-            </h4>
-            <p class="fw-lighter">full-stack web developer</p>
+        <div class="text-white mt-md-4 ">
+            <div class="d-none d-md-block">
+                <img src="{{url('/assets/images/farhan.jpg')}}" alt="profile picture" style="width: 45%" class="img-fluid rounded-soft">
+                <h4 class="mt-4 ">
+                Ahsanul Haque Farhan
+                </h4>
+                <p class="fw-lighter">full-stack web developer</p>
+            </div>
 
-            <div class="navbar-nav flex-column text-center mt-5 px-2">
+            <div class="navbar-nav flex-column text-center mt-md-5 px-2">
                 @foreach($pages as $page)
                     <li class="nav-item {{$loop->index === 3 ? "mt-3 ":""}}">
                         <a href="{{$page['link']}}"
