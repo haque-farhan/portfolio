@@ -66,6 +66,11 @@
     transition: 0.7s;
 }
 
+.badge-secondary {
+    color: #fff;
+    background-color: #748194;
+}
+
 /*
 ******* Base *******
 */
@@ -595,14 +600,14 @@ body {
 
 .badge-soft-secondary {
     color: #7d899b;
-    background-color: #e3e6ea;
+    background-color: #e4e9ee;
 }
 
-.badge-soft-secondary[href]:hover,
-.badge-soft-secondary[href]:focus {
+.badge-soft-secondary:hover {
+    cursor: pointer;
     text-decoration: none;
     color: #7d899b;
-    background-color: #c6ccd4;
+    background-color: #d6dadf;
 }
 
 .badge-soft-success {
@@ -1078,7 +1083,7 @@ img {
 }
 
 .pic-scroll:hover img {
-    animation: moveSlideshow 3s linear;
+    animation: moveSlideshow 7s linear;
     animation-fill-mode: forwards;
 }
 

@@ -3,15 +3,19 @@
     $projects = [
     [
       "title" => "Graduate Network",
-      "sub_title" => "A SaaS platform to connect university alumnis",
-      "description" => "Graduate Network offers solutions for the Educational Technology & Community Network - to engage the alumni & community members in a meaningful & positive way.",
+      "sub_title" => "A SaaS platform to connect university alumnis and community",
+      "description" => "Graduate Network offers solutions for the Educational Technology & Community Network - to engage the alumni & community members in a meaningful & positive way.Some features below",
       "bullet_points" => [
-        "A SaaS platform by which educational institutions will be able to engage your alumni with your institution and cultivate the give-back culture through mentoring & fundraising program.",
-        "Responsive application (Laravel, React)."
+        "Alumni Directory",
+        "Mentoring Hub",
+        "Job Portal",
+        "Event Platform",
+        "Fundraising Solution",
+        "Financial Module"
       ],
       "link" => "https://demo.gradnet.xyz/",
       "technologies" => ["Laravel", "React", "MySQL"],
-      "image" => "/assets/images/graduate-network.png"
+      "image" => "/assets/images/gradnet_full.png"
     ],
     [
       "title" => "Smart College Automation System",
@@ -54,40 +58,48 @@
 @section('content')
     <div class="main-content mt-5">
         <div class="container">
-
+        <div class="my-portfolio mb-6">
+            <h1 class="heading-underline heading-underline-2 text-900">My <span class="text-main">Portfolio</span> </h1>
+            <p class="mt-2 text-justify">
+            See some of my work descriptions below. I have been Developing & Co-developing these projects in the last couple of years. Hover on images to see the full pageview.
+            </p>
+        </div>
             @foreach($projects as $project)
-                <div class="d-flex timeline-element mt-0 mt-lg-5">
-                    <div class="me-3 mt-2" style="font-size: 0.5rem">
-                        <i class="fas fa-square-full fa-xs text-danger-pro"></i>
-                    </div>
+                <div class="mt-md-4">
                     <div class="row">
                         <div class="col-md-6">
-                            <h3 class="fw-bold">
-                                <a href="{{$project['link']}}"
-                                   class="text-decoration-none text-800 hover-danger">{{$project['title']}}</a>
+                            <h3 class="text-900">
+                                <a href="{{$project['link']}}" class="text-decoration-none text-black hover-danger">{{$project['title']}}</a>
                             </h3>
-                            <p class="mb-1">{{$project['sub_title']}}</p>
-                            <p class="text-700 font-weight-semi-bold mt-4 text-justify">{{$project['description']}}</p>
-                            <ul>
-                                @foreach($project['bullet_points'] as $bullet_point)
-                                    <li>{{$bullet_point}}</li>
-                                @endforeach
-                            </ul>
-                            <a target="_blank" href="{{$project['link']}}" class="btn btn-danger btn-sm">Visit
-                                Site</a>
-
-                            <p class="mb-2 mt-4 fw-bold fs-2">Technologies</p>
-                            <div class="d-flex">
-                                @foreach($project['technologies'] as $technology)
-                                    <span class="badge rounded-pill bg-danger me-2"
-                                          style="opacity: 0.65">{{$technology}}</span>
-                                @endforeach
+                            <h6 class="mb-4 font-weight-thin">{{$project['sub_title']}}</h6>
+                            <p class="text-700 my-3 text-justify">{{$project['description']}}</p>
+                            <div class="row">
+                            @foreach($project['bullet_points'] as $key => $bullet_point)
+                                <div class="@if(count($project['bullet_points']) > 3) col-md-6 @else col-md-12 @endif">
+                                    <div class="feature mb-1">
+                                        <div class="media align-items-center">
+                                            <span class="fas fa-check text-main"></span>
+                                            <div class="media-body ml-3">
+                                                {{$bullet_point}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             @endforeach
+                              </div>
+                            <a target="_blank" href="{{$project['link']}}" class="btn btn-danger mt-4">View Demo <span class="ml-1 fas fa-arrow-right"></span></a>
+                              <div class="technology mt-4">
+                                  <span class="mr-2">Technologies: </span>
+                                    @foreach($project['technologies'] as $technology)
+                                        <span class="mr-2 badge badge-soft-secondary">{{$technology}}</span>
+                                    @endforeach
                             </div>
                         </div>
                         <div class="col-md-6 mt-4 mt-lg-0">
-                            <a target="_blank" href="https://abacopolarized.com/">
-                                <img src="{{url($project['image'])}}"
-                                     style="max-height: 400px" alt="profile picture" class="img-fluid ">
+                            <a target="_blank" href="{{ $project['link'] }}">
+                                 <div class="pic-scroll rounded-soft text-center">
+                                    <img class="img-fluid" src="{{url($project['image'])}}" alt="Image" />
+                                </div>
                             </a>
                         </div>
                         @if(!$loop->last)

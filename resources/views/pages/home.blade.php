@@ -129,7 +129,7 @@
                          @foreach ($projects as $project)
                             <div class="col-sm-6 col-lg-6 mb-6 mb-lg-4">
                                 <div class="pic-scroll rounded-soft text-center">
-                                    <img class="img-fluid" src="{{url($project['image'])}}" alt="" />
+                                    <img class="img-fluid" src="{{url($project['image'])}}" alt="Image" />
                                 </div>
                                 <div class="product-name mt-3">
                                         <h5 class="text-900 mb-1">{{ $project['title'] }}</h5>
