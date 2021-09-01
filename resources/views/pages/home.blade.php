@@ -149,7 +149,7 @@
                      <p class="mt-2 text-justify">
                      I can help you in your project by
                      </p>
-                     <div class="row mt-6">
+                     <div class="row mt-4">
                         <div class="col-sm-6 col-lg-4 mb-3 mb-sm-4">
                             <div class="d-flex px-md-4">
                                 <div class="flex-shrink-0">
@@ -202,7 +202,7 @@
 
                     </div>
 
-                    <p class="mt-2 text-justify">
+                    <p class="mt-4 text-justify">
                         Want me to work on you amazing web application ? <span class="text-main">Lets Talk !</span>
                     </p>
                       <div class="mt-3 mb-6">

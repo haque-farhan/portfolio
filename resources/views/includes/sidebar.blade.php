@@ -1,9 +1,9 @@
 @php
     $pages = [
         ['title' => 'Homepage', 'link' => '/'],
-        ['title' => 'portfolio', 'link' => '/portfolio'],
-        ['title' => 'contact me', 'link' => '/contact'],
-        ['title' => 'my cv', 'link' => '/cv',],
+        ['title' => 'portfolio', 'link' => 'portfolio'],
+        ['title' => 'contact me', 'link' => 'contact'],
+        ['title' => 'my cv', 'link' => 'cv',],
     ];
 @endphp
 
@@ -40,7 +40,7 @@
                 @foreach($pages as $page)
                     <li class="nav-item {{$loop->index === 3 ? "mt-3 ":""}}">
                         <a href="{{$page['link']}}"
-                        class="sidebar-item nav-link text-uppercase pb-1 {{ request()->is('portfolio') ? 'active' : '' }}">{{$page['title']}}</a>
+                        class="sidebar-item nav-link text-uppercase pb-1 {{ request()->is($page['link']) ? 'active' : '' }} ">{{$page['title']}}</a>
                     </li>
                 @endforeach
             </div>
