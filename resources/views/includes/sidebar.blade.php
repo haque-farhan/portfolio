@@ -1,10 +1,9 @@
 @php
     $pages = [
-        ['title' => 'home', 'link' => '/'],
+        ['title' => 'Homepage', 'link' => '/'],
         ['title' => 'portfolio', 'link' => '/portfolio'],
         ['title' => 'contact me', 'link' => '/contact'],
         ['title' => 'my cv', 'link' => '/cv',],
-        ['title' => 'personal blog', 'link' => '/blog',],
     ];
 @endphp
 
@@ -39,25 +38,25 @@
 
             <div class="navbar-nav flex-column text-center mt-5 px-2">
                 @foreach($pages as $page)
-                    <li class="nav-item {{$loop->first ? "d-md-none ":""}}{{$loop->index === 3 ? "mt-3 ":""}}">
+                    <li class="nav-item {{$loop->index === 3 ? "mt-3 ":""}}">
                         <a href="{{$page['link']}}"
-                        class="sidebar-item nav-link text-uppercase pb-1">{{$page['title']}}</a>
+                        class="sidebar-item nav-link text-uppercase pb-1 {{ request()->is('portfolio') ? 'active' : '' }}">{{$page['title']}}</a>
                     </li>
                 @endforeach
             </div>
 
             <div class="mt-5 fs-5 text-white px-2 d-none d-md-block">
                 <p style="font-size: 10px;color: #ccc">GET IN TOUCH</p>
-                <a href="mailto:rafi.ogchy@gmail.com" class="social-link mx-1">
+                <a href="mailto:farhanhaque.lu@gmail.com" class="social-link mx-1">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a target="_blank" href="https://www.linkedin.com/in/osman52/" class="social-link mx-1">
+                <a target="_blank" href="https://www.linkedin.com/in/ahsanul-haque-farhan-90052619b/" class="social-link mx-1">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a target="_blank" href="https://github.com/Osman-Rafi" class="social-link mx-1">
+                <a target="_blank" href="https://github.com/haque-farhan" class="social-link mx-1">
                     <i class="fab fa-github-square"></i>
                 </a>
-                <a target="_blank" href="https://www.facebook.com/osman.rafi140/" class="social-link mx-1">
+                <a target="_blank" href="https://www.facebook.com/ahsanulf" class="social-link mx-1">
                     <i class="fab fa-facebook-square"></i>
                 </a>
             </div>

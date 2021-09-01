@@ -45,14 +45,34 @@
 
     $projects = [
         [
-            'image' => '/assets/images/gif/falcon.gif',
-            'title' => 'Falcon-React',
-            'description' => 'specialised in frontend and backend development for complex scalable web apps and websites.'
+            'image' => '/assets/images/smartcollege_full.png',
+            'title' => 'SLMS - Smart College Automation',
+            'link' => 'https://demo.smartcollegebd.com/',
+            'description' => 'Paperless college management system.A simple way to schedule class, assessment, and measure performance.'
         ],
         [
-            'image' => '/assets/images/gif/falcon.gif',
-            'title' => 'Falcon-React',
-            'description' => 'specialised in frontend and backend development for complex scalable web apps and websites.'
+            'image' => '/assets/images/gradnet_full.png',
+            'title' => 'Gradnet - Graduate Network',
+            'link' => 'https://demo.gradnet.xyz/',
+            'description' => 'It\'s a solutions for the Educational Technology & Community Network - to engage the alumni & community members'
+        ],
+        [
+            'image' => '/assets/images/cats-full.png',
+            'title' => 'CATS-MIST (CE)',
+            'link' => 'https://ce-cats.mist.ac.bd/',
+            'description' => 'Automation of CRTC Labratories Management'
+        ],
+        [
+            'image' => '/assets/images/falcon_full.png',
+            'title' => 'Falcon – Admin Dashboard & WebApp Template',
+            'link' => 'https://falcon.technext.it/dashboard-alt',
+            'description' => 'Most popular Admin Dashboard template in Bootstrap Marketplace'
+        ],
+        [
+            'image' => '/assets/images/journal.png',
+            'title' => 'Smart Journal Automation',
+            'link' => 'https://journals.sust.edu/sustjst/',
+            'description' => 'Smart journal is a research related management system where author can post their articles and editors can approve or reject the articles. It has strong module like articles, editions, users and site managements.'
         ]
     ];
 @endphp
@@ -90,7 +110,7 @@
                                 <div class="media-body">
                                 <h5 class="font-weight-bold">{{$skill['title']}}</h5>
                                 <p class="text-justify">{{$skill['description']}}</p>
-                                <a class="text-main font-weight-bold" href="{{$skill['link']}}">View Documentation <span class="fas fa-chevron-right" data-fa-transform="down-2 shrink-5 right-4"></span>
+                                <a class="text-main font-weight-bold" href="{{$skill['link']}}">View Documentation <span class="fas fa-chevron-right fs--1" data-fa-transform="down-2 shrink-5 right-4"></span>
                                 </a>
                                 </div>
                             </div>
@@ -99,27 +119,27 @@
                     </div>
                 </div>
 
-                <div class="hire-me mt-6">
+                <div class="my-portfolio mt-6">
                     <h1 class="heading-underline heading-underline-2 text-900">My <span class="text-main">Portfolio</span> </h1>
                      <p class="mt-2 text-justify">
-                       I can help you in Your project by
+                       See some of my works below. Developing & Co-developing these projects made me love with the technologies I/we used.Hover on image to see the full page view.
                      </p>
                      <div class="mt-6">
-                     <div class="row">
+                        <div class="row">
                          @foreach ($projects as $project)
-                            <div class="col-sm-6 col-lg-6 mb-4">
-                                <div class="hoverbox rounded-soft text-center">
+                            <div class="col-sm-6 col-lg-6 mb-6 mb-lg-4">
+                                <div class="pic-scroll rounded-soft text-center">
                                     <img class="img-fluid" src="{{url($project['image'])}}" alt="" />
-                                    <div class="hoverbox-content bg-dark p-5 self-center">
-                                        <div>
-                                            <h5 class="text-white">{{ $project['title'] }}</h5>
-                                            <p class="lead text-white fs--1">{{ $project['description'] }}</p>
-                                            <a class="btn btn-light btn-sm mt-1" href="#!">Learn more</a>
-                                        </div>
-                                    </div>
                                 </div>
+                                <div class="product-name mt-3">
+                                        <h5 class="text-900 mb-1">{{ $project['title'] }}</h5>
+                                        <p class="fs--1 text-justify text-700">{{ $project['description'] }}</p>
+                                    </div>
                             </div>
                             @endforeach
+                            <div class="col-12 mb-4 d-flex justify-content-center">
+                                <div class="btn btn-outline-main">View More <span class="fas fa-arrow-right"></span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -127,20 +147,76 @@
                 <div class="hire-me mt-6">
                     <h1 class="heading-underline heading-underline-2 text-900">Hire <span class="text-main">Me!</span> </h1>
                      <p class="mt-2 text-justify">
-                       I can help you in Your project by
+                     I can help you in your project by
                      </p>
-                     <div class="mt-6">
-                        <h3 class="mb-0 fs-xl-4 fs-sm-3 font-weight-thin">
-                            I can help you in <span class="text-main">Your project by</span>
-                        </h3>
-                         <ul class="mt-3">
-                            <li>Developing or co-developing back-end & front end.</li>
-                            <li>Monitoring or supporting projects.</li>
-                            <li>Updating existing codebase.</li>
-                            <li>Fixing major and minor bugs.</li>
-                        </ul>
+                     <div class="row mt-6">
+                        <div class="col-sm-6 col-lg-4 mb-3 mb-sm-4">
+                            <div class="d-flex px-md-4">
+                                <div class="flex-shrink-0">
+                                    <span>—</span>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h4>Development</h4>
+                                    <p>Developing or co-developing back-end & front end.</p>
+                                </div>
+                            </div>
+                         </div>
+
+                        <div class="col-sm-6 col-lg-4 mb-3 mb-sm-4">
+                            <div class="d-flex px-md-4">
+                                <div class="flex-shrink-0">
+                                <span>—</span>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                <h4>Support</h4>
+                                <p>Monitoring or supporting projects.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-100"></div>
+
+                    <div class="col-sm-6 col-lg-4 mb-3 mb-sm-4">
+                            <div class="d-flex px-md-4">
+                                <div class="flex-shrink-0">
+                                <span>—</span>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                <h4>Existing Codebase</h4>
+                                <p>Updating existing codebase.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4 mb-3 mb-sm-4">
+                            <div class="d-flex px-md-4">
+                                <div class="flex-shrink-0">
+                                <span>—</span>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                <h4>Fixing Bugs</h4>
+                                <p>Fixing major and minor bugs.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
+
+                    <p class="mt-2 text-justify">
+                        Want me to work on you amazing web application ? <span class="text-main">Lets Talk !</span>
+                    </p>
+                      <div class="mt-3 mb-6">
+                          <dl class="row">
+                            <dt class="col-sm-4">PHONE</dt>
+                            <dd class="col-sm-8">+88 01710212329</dd>
+                            <dt class="col-sm-4">EMAIL</dt>
+                            <dd class="col-sm-8">farhanhaque.lu@gmail.com</dd>
+                        </dl>
+                      </div>
                 </div>
+                <div class="col text-center border-top border-200 py-4">
+              <p class="mb-0 font-weight-semi-bold">Thanks for visiting</p>
+            </div>
             </div>
         </div>
 @endsection

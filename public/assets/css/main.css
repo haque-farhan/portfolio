@@ -114,7 +114,7 @@ body {
 }
 
 .text-main {
-    color: #bd1417;
+    color: #3476b9;
 }
 
 #body-cv {
@@ -154,6 +154,17 @@ body {
     .layout {
         display: flex;
     }
+}
+
+.btn-outline-main {
+    color: #3476b9;
+    border-color: #3272b3;
+}
+
+.btn-outline-main:hover {
+    color: #fff;
+    background-color: #3476b9;
+    border-color: #3272b3;
 }
 
 /*
@@ -196,18 +207,28 @@ body {
 */
 @media (min-width: 768px) {
     .main-content {
-        margin-left: 410px !important;
+        margin-left: 395px !important;
+    }
+}
+@media (min-width: 1800px) {
+    .main-content {
+        margin-left: 250px !important;
     }
 }
 
 .main-content {
     overflow-y: hidden;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 /*
 ******* Sidebar *******
 */
+
+.nav-link.active {
+    font-weight: 400;
+    color: white;
+}
 @media (min-width: 768px) {
     .sidebar {
         padding: 1.5rem;
@@ -224,8 +245,8 @@ body {
 }
 
 .sidebar {
-    box-shadow: inset 0 0 0 2000px rgba(145, 13, 13, 0.7);
-    background-image: url("../images/pexels-eberhard-grossgasteiger.jpg");
+    box-shadow: inset 0 0 0 2000px rgba(13 78 145 / 70%);
+    background-image: url("../images/bc.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -321,12 +342,15 @@ body {
     border-radius: 20px !important;
 }
 .rounded-soft {
-  border-radius: 0.375rem !important;
+    border-radius: 0.375rem !important;
 }
 .field-sm {
     height: 35px;
 }
-
+.self-center {
+    -ms-flex-item-align: center !important;
+    align-self: center !important;
+}
 /*-----------------------------------------------
 |   Font Sizes
 -----------------------------------------------*/
@@ -962,53 +986,108 @@ body {
     margin-left: 15rem !important;
 }
 
-
 /*-----------------------------------------------
 |   Hover Box
 -----------------------------------------------*/
 .hoverbox {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .hoverbox .hoverbox-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-  margin: 0 !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    margin: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .hoverbox .hoverbox-primary-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
 }
 
-.hoverbox:hover .hover-box-content-initial, .hoverbox:focus .hover-box-content-initial {
-  opacity: 0;
+.hoverbox:hover .hover-box-content-initial,
+.hoverbox:focus .hover-box-content-initial {
+    opacity: 0;
 }
 
-.hoverbox:hover .hoverbox-content, .hoverbox:focus .hoverbox-content {
-  opacity: 1;
+.hoverbox:hover .hoverbox-content,
+.hoverbox:focus .hoverbox-content {
+    opacity: 1;
 }
 
-.hoverbox:hover .as-hoverbox-content, .hoverbox:focus .as-hoverbox-content {
-  z-index: 1;
+.hoverbox:hover .as-hoverbox-content,
+.hoverbox:focus .as-hoverbox-content {
+    z-index: 1;
 }
 
 .hoverbox-content-gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
-  background: -o-linear-gradient(transparent, #000);
-  background: linear-gradient(transparent, #000);
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(transparent),
+        to(#000)
+    );
+    background: -o-linear-gradient(transparent, #000);
+    background: linear-gradient(transparent, #000);
+}
+
+.pic-scroll {
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.pic-scroll:before {
+    width: 100%;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+}
+
+.pic-scroll:after {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px -25px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+img {
+    cursor: pointer;
+}
+
+.pic-scroll:hover img {
+    animation: moveSlideshow 3s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveSlideshow {
+    100% {
+        transform: translateY(calc(-100% + 300px));
+    }
+}
+
+.pic-scroll:hover .pic-scroll:after {
+    opacity: 0;
 }
