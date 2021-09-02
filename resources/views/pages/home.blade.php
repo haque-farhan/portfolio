@@ -132,13 +132,20 @@
                                     <img class="img-fluid" src="{{url($project['image'])}}" alt="Image" />
                                 </div>
                                 <div class="product-name mt-3">
-                                        <h5 class="text-900 mb-1">{{ $project['title'] }}</h5>
+                                    <h5 class="mb-1">
+                                            <a href="{{ $project['link'] }}" class="text-900 ">
+                                            {{ $project['title'] }}
+                                        </a>
+                                        </h5>
                                         <p class="fs--1 text-justify text-700">{{ $project['description'] }}</p>
                                     </div>
                             </div>
                             @endforeach
                             <div class="col-12 mb-4 d-flex justify-content-center">
-                                <div class="btn btn-outline-main">View More <span class="fas fa-arrow-right"></span></div>
+                               <a href="/portfolio" class="btn btn-outline-main">
+                                    View More
+                                    <span class="fas fa-arrow-right"></span>
+                                    </a>
                             </div>
                         </div>
                     </div>

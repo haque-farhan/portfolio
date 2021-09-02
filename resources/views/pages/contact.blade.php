@@ -1,9 +1,9 @@
 @php
     $contact_info = [
-      ['medium' => 'Email', 'link' => 'mailto:farhan.haque.lu@gmail.com','text'=>'farhan.haque.lu@gmail.com', 'icon' => 'far fa-envelope'],
-      ['medium' => 'LinkedIn', 'link' => 'https://www.linkedin.com/','text'=>'farhan', 'icon' => 'fab fa-linkedin-in'],
-      ['medium' => 'Github', 'link' => 'https://github.com/','text'=>'farhan', 'icon' => 'fab fa-github'],
-      ['medium' => 'Facebook', 'link' => 'https://github.com/','text'=>'farhan', 'icon' => 'fab fa-facebook-f'],
+      ['medium' => 'Email', 'link' => 'mailto:farhanhaque.lu@gmail.com','text'=>'farhanhaque.lu@gmail.com', 'icon' => 'far fa-envelope'],
+      ['medium' => 'LinkedIn', 'link' => 'https://www.linkedin.com/in/ahsanul-haque-farhan-90052619b','text'=>'Ahsanul Haque Farhan', 'icon' => 'fab fa-linkedin-in'],
+      ['medium' => 'Github', 'link' => 'https://github.com/haque-farhan','text'=>'haque-farhan', 'icon' => 'fab fa-github'],
+      ['medium' => 'Facebook', 'link' => 'https://www.facebook.com/ahsanulf','text'=>'Ahsanul Haque Farhan', 'icon' => 'fab fa-facebook-f'],
 
     ]
 @endphp
@@ -11,7 +11,7 @@
 @extends('layouts.default')
 
 @section('title')
-    <title>Contact - Osman Goni Chowdhury - Full-Stack Developer</title>
+    <title>Contact - Ahsanul Haque Farhan - Full-Stack Developer</title>
 @endsection
 
 @section('content')
@@ -22,8 +22,11 @@
             </div>
         @endif--}}
         <div class="container">
-            <h2 class="fw-bold text">CONTACT ME</h2>
-            <p>I am available for hire and open to any ideas of cooperation.</p>
+            <div class="my-portfolio mb-6">
+            <h1 class="heading-underline heading-underline-2 text-900">Contact <span class="text-main">Me</span> </h1>
+            <p class="mt-2 text-justify">
+                I am available for hire and open to any ideas of cooperation.            </p>
+        </div>
             <div class="mt-2">
                 <table class="table table-borderless">
                     <tbody>
@@ -42,7 +45,7 @@
                 </table>
             </div>
         </div>
-        <div class="container">
+        {{--  <div class="container">
             <div class="row mt-6">
                 <div class="col-md-7 mt-3">
                     <h1 class="text-center">Send a Message</h1>
@@ -76,6 +79,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  --}}
     </div>
 @endsection
