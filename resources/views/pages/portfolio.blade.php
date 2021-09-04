@@ -95,15 +95,22 @@
 @section('content')
     <div class="main-content mt-5">
         <div class="container">
-        <div class="my-portfolio mb-6">
+        <div class="my-portfolio mb-6 text-center text-md-left">
             <h1 class="heading-underline heading-underline-2 text-900">My <span class="text-main">Portfolio</span> </h1>
-            <p class="mt-2 text-justify">
+            <p class="mt-2 text-justify text-center text-md-left">
             See some of my work descriptions below. I have been Developing & Co-developing these projects in the last couple of years. Hover on images to see the full pageview.
             </p>
         </div>
             @foreach($projects as $project)
                 <div class="mt-md-4">
                     <div class="row">
+                         <div class="col-md-6 d-md-none mb-3">
+                            <a target="_blank" href="{{ $project['link'] }}">
+                                 <div class="pic-scroll shadow rounded-soft text-center">
+                                    <img class="img-fluid" src="{{url($project['image'])}}" alt="Image" />
+                                </div>
+                            </a>
+                        </div>
                         <div class="col-md-6">
                             <h3 class="text-900">
                                 <a href="{{$project['link']}}" class="text-decoration-none text-black hover-danger">{{$project['title']}}</a>
@@ -132,7 +139,7 @@
                                     @endforeach
                             </div>
                         </div>
-                        <div class="col-md-6 mt-4 mt-lg-0">
+                        <div class="col-md-6 mt-4 mt-lg-0 d-none d-md-block">
                             <a target="_blank" href="{{ $project['link'] }}">
                                  <div class="pic-scroll shadow rounded-soft text-center">
                                     <img class="img-fluid" src="{{url($project['image'])}}" alt="Image" />
