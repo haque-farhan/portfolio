@@ -17,8 +17,8 @@
 @yield('title')
 
 {{--Facebook sharing--}}
-<meta property="og:url"                content="findosman.xyz" />
+<meta property="og:url"                content="farhan.xyz" />
 <meta property="og:type"               content="article" />
 <meta property="og:title"              content="Farhan - Full Stack Developer" />
 <meta property="og:description"        content="Looking for someone who can build or cooperate in the development of your amazing Web Application? I am available & open to any ideas of cooperation." />
-<meta property="og:image"              content="http://findosman.xyz/assets/images/farhan.jpg" />
+<meta property="og:image"              content="http://farhan.xyz/assets/images/farhan.jpg" />
