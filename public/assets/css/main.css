@@ -212,7 +212,7 @@ body {
 
 .main-content {
     overflow-y: hidden;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 /*
@@ -243,6 +243,32 @@ body {
     background-image: url("../images/pexels-eberhard-grossgasteiger.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.btn-main {
+    color: #fff;
+    background-color: #d22a3b;
+    border-color: #b60d1e;
+}
+.btn-main:hover {
+    color: #fff;
+    background-color: #c01a2b;
+    border-color: #b60d1e;
+}
+
+.btn-icon-hover:hover .fa-arrow-right {
+    -webkit-transform: translateX(0.2rem);
+    -ms-transform: translateX(0.2rem);
+    transform: translateX(0.2rem);
+}
+
+.btn-icon-hover .fa-arrow-right {
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    padding-top: 2px;
 }
 
 .btn-outline-main {
@@ -4781,7 +4807,7 @@ a {
 }
 
 .pic-scroll {
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     margin: 0 auto;
     display: inline-block;
@@ -4791,7 +4817,7 @@ a {
 
 .pic-scroll:before {
     width: 100%;
-    height: 300px;
+    height: 400px;
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
@@ -4823,7 +4849,7 @@ img {
 
 @keyframes moveSlideshow {
     100% {
-        transform: translateY(calc(-100% + 300px));
+        transform: translateY(calc(-100% + 400px));
     }
 }
 
@@ -4880,6 +4906,48 @@ img {
 }
 
 .no-gutters {
-  margin-right: 0;
-  margin-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    .d-md-none {
+        display: none !important;
+    }
+    .d-md-inline {
+        display: inline !important;
+    }
+    .d-md-inline-block {
+        display: inline-block !important;
+    }
+    .d-md-block {
+        display: block !important;
+    }
+    .d-md-table {
+        display: table !important;
+    }
+    .d-md-table-row {
+        display: table-row !important;
+    }
+    .d-md-table-cell {
+        display: table-cell !important;
+    }
+    .d-md-flex {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+    .d-md-inline-flex {
+        display: -webkit-inline-box !important;
+        display: -ms-inline-flexbox !important;
+        display: inline-flex !important;
+    }
+}
+
+.btn {
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0)
+    );
 }
