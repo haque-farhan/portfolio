@@ -170,7 +170,7 @@
                             </div>
                             @endforeach
                             <div class="col-12 mb-4 d-flex justify-content-center">
-                               <a href="/portfolio" class="btn btn-outline-main">
+                               <a href="/portfolio" class="btn btn-outline-main btn-icon-hover">
                                     View More
                                     <span class="fas fa-arrow-right"></span>
                                     </a>
