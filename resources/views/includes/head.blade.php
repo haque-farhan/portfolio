@@ -22,3 +22,13 @@
 <meta property="og:title"              content="Farhan - Full Stack Developer" />
 <meta property="og:description"        content="Looking for someone who can build or cooperate in the development of your amazing Web Application? I am available & open to any ideas of cooperation." />
 <meta property="og:image"              content="http://farhan.xyz/assets/images/farhan.jpg" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8WH3FHB8V9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8WH3FHB8V9');
+</script>
