@@ -67,7 +67,7 @@
         ],
         [
             'image' => '/assets/images/falcon_full.png',
-            'title' => 'Falcon – Admin Dashboard & WebApp Template',
+            'title' => 'Falcon – Admin Dashboard & WebApp Template [React]',
             'link' => 'https://falcon.technext.it/dashboard-alt',
             'description' => 'Most popular Admin Dashboard template in Bootstrap Marketplace'
         ],
