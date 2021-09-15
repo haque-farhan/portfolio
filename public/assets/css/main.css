@@ -382,11 +382,10 @@ body {
     z-index: 10;
 }
 
-/*@media (max-width: 768px) {*/
-/*    .time-element-date:before{*/
-/*        left:44px;*/
-/*    }*/
-/*}*/
+::selection {
+  color: #fff;
+  background: #b92433 ;
+}
 
 .project-description {
     text-align: justify;
