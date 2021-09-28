@@ -14,7 +14,7 @@
         @foreach($pages as $page)
             <li class="nav-item px-1">
                 <a href="{{$page['link']}}"
-                class="sidebar-item nav-link px-2 {{ request()->is($page['link']) ? 'active' : '' }} ">
+                class="sidebar-item ls-1 nav-link px-2 {{ request()->is($page['link']) ? 'active' : '' }} ">
                 <span class="{{$page['icon']}}"></span>
                 <span class="d-block"> {{$page['title']}}</span>
                 </a>
@@ -26,20 +26,33 @@
         <i class="fas fa-bars"></i>
     </button> --}}
     <div class="d-none d-md-block" id="sidebarCollapse">
-        <div class="text-white mt-md-4 text-center">
-            <div class="d-none d-md-block">
-                <img src="{{url('/assets/images/farhan.jpg')}}" alt="profile picture" style="width: 45%" class="img-fluid rounded-soft">
-                <h4 class="mt-4 ">
+        <div class="text-white mt-md-4">
+            <div class="d-none d-md-block px-3">
+                <div class="media align-items-center">
+                    <div class="avatar avatar-4xl">
+                    <img src="{{url('/assets/images/farhan.jpg')}}" alt="profile picture" class="rounded-circle">
+                </div>
+                    <div class="media-body ml-3">
+                <h5 class="">
                     Ahsanul Haque Farhan
-                </h4>
-                <p class="fw-lighter">full-stack web developer</p>
+                </h5>
+                <p >Full-stack Web Developer</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="navbar-nav flex-column text-center mt-md-5 px-2">
+            <div class="navbar-nav flex-column  mt-md-5">
                 @foreach($pages as $page)
-                    <li class="nav-item {{$loop->index === 3 ? "mt-3 ":""}}">
-                        <a href="{{$page['link']}}"
-                        class="sidebar-item nav-link text-uppercase pb-1 {{ request()->is($page['link']) ? 'active' : '' }} ">{{$page['title']}}</a>
+                    <li class="nav-item my-1  {{ request()->is($page['link']) ? 'active' : '' }}">
+                          <a href="{{$page['link']}}">
+                        <div class="d-flex align-items-center">
+                         <span class="{{$page['icon']}} mr-3 pl-4 text-white"></span>
+                          <span  class="sidebar-item nav-link text-uppercase ls-1  ">
+                              {{$page['title']}}
+                          </span>
+                        </div>
+                        </a>
                     </li>
                 @endforeach
             </div>

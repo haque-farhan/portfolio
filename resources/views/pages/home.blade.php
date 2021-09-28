@@ -119,22 +119,29 @@
                     <h5 class="mt-3 font-weight-semi-bold">
                     Ahsanul Haque Farhan
                     </h5>
-                    <p class="fw-lighter">full-stack web developer</p>
+                    <p class="font-weight-semi-bold">Full-stack web developer</p>
                 </div>
                 <div class="introduction text-center text-md-left">
-                    <h1 class="heading-underline heading-underline-2 text-900">Hey <span class="text-main">there!</span> </h1>
-                    <p class="mt-2 text-justify fs-md-0 fs--1">
-                        I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps and websites.
-                        I have worked with various technologies most of them are based on <span class="fw-bold">PHP</span> and <span class="fw-bold">Javascript.</span>
-                         I have <span class="fw-bold">maintained, developed and launched</span> multiple
-                        projects
-                        from scratch, carrying the development of it's
-                        <span class="fw-bold">back-end</span> and <span class="fw-bold">front-end</span> codebases.
-                    </p>
+                    <h1 class=" text-main">Hey there!</h1>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                 <p class="mt-2 text-justify fs-main">
+                                        I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps and websites.
+                                I have worked with various technologies most of them are based on <span>PHP</span> and <span>Javascript.</span>
+                                I have <span>maintained, developed and launched</span> multiple
+                                projects
+                                from scratch, carrying the development of it's
+                                <span>back-end</span> and <span>front-end</span> codebases.
+                             </p>
+                            </div>
+                        </div>
+
+
                 </div>
                 <div class="skills mt-md-6 mt-5">
                     <div class="text-center text-md-left">
-                        <h1 class="heading-underline heading-underline-2 text-900">Skills <span class="text-main">Overview</span> </h1>
+                        <h2 class=" text-main">Skills <span class="text-main">Overview</span> </h2>
                         <p class="mt-2 text-justify fs-md-0 fs--1 text-center text-md-left">
                             Below is a quick overview of my main technical skill sets and tools I use.
                         </p>
