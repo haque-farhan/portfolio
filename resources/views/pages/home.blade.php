@@ -55,57 +55,41 @@
         ],
     ];
 
-    $backendSkills = [
-        [
-               "title" => "Laravel",
-               "link" => "https://laravel.com/",
-               "description" => "Laravel is a web application framework with expressive, elegant syntax. It provides a structure and starting point for creating your application.",
-               "image" => "https://laravel.com/img/logomark.min.svg",
-        ],
-        [
-               "title" => "CodeIgniter",
-               "link" => "https://codeigniter.com/",
-               "description" => "CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications.",
-               "image" => "https://codeigniter.com/assets/images/ci-logo-big.png",
-        ],
-         [
-               "title" => "MySQL",
-               "link" => "https://www.mysql.com/",
-               "description" => "MySQL is an open-source relational database management system.",
-               "image" => "https://upload.wikimedia.org/wikipedia/commons/b/b2/Database-mysql.svg",
-        ],
-    ];
-
     $projects = [
         [
             'image' => '/assets/images/smartcollege_full.png',
             'title' => 'SLMS - Smart College Automation',
             'link' => 'https://demo.smartcollegebd.com/',
-            'description' => 'Paperless college management system.A simple way to schedule class, assessment, and measure performance.'
+            'description' => 'Paperless college management system.A simple way to schedule class, assessment, and measure performance.',
+            "technologies" => ["laravel", "bootstrap"],
         ],
         [
             'image' => '/assets/images/gradnet_full.png',
             'title' => 'Gradnet - Graduate Network',
             'link' => 'https://demo.gradnet.xyz/',
-            'description' => 'It\'s a solutions for the Educational Technology & Community Network - to engage the alumni & community members'
+            'description' => 'It\'s a solutions for the Educational Technology & Community Network - to engage the alumni & community members',
+             "technologies" => ["laravel", "reactjs"],
         ],
         [
             'image' => '/assets/images/cats-full.png',
             'title' => 'CATS-MIST (CE)',
             'link' => 'https://ce-cats.mist.ac.bd/',
-            'description' => 'Automation of CRTC Labratories Management'
+            'description' => 'Automation of CRTC Labratories Management',
+             "technologies" => ["laravel", "vuejs"],
         ],
         [
             'image' => '/assets/images/falcon_full.png',
             'title' => 'Falcon – Admin Dashboard & WebApp Template [React]',
             'link' => 'https://falcon.technext.it/dashboard-alt',
-            'description' => 'Most popular Admin Dashboard template in Bootstrap Marketplace'
+            'description' => 'Most popular Admin Dashboard template in Bootstrap Marketplace',
+             "technologies" => ["reactjs", "bootstrap"],
         ],
         [
             'image' => '/assets/images/journal.png',
             'title' => 'Smart Journal Automation',
             'link' => 'https://journals.sust.edu/sustjst/',
-            'description' => 'Smart journal is a research related management system where author can post their articles and editors can approve or reject the articles. It has strong module like articles, editions, users and site managements.'
+            'description' => 'Smart journal is a research related management system where author can post their articles and editors can approve or reject the articles. It has strong module like articles, editions, users and site managements.',
+             "technologies" => ["codeignator", "bootstrap"],
         ]
     ];
 @endphp
@@ -141,65 +125,74 @@
                 </div>
                 <div class="skills mt-md-6 mt-5">
                     <div class="text-center text-md-left">
-                        <h2 class=" text-main">Skills <span class="text-main">Overview</span> </h2>
+                        <h2 class=" text-main">Skills Overview</h2>
                         <p class="mt-2 text-justify fs-md-0 fs--1 text-center text-md-left">
                             Below is a quick overview of my main technical skill sets and tools I use.
                         </p>
                     </div>
                     <div class="align-items-center justify-content-center justify-content-md-start mt-5 row">
-                        @foreach($skills as $key => $skill)
-                        <div class="col-auto">
-                              <img class="img-fluid" src="{{$skill['image']}}" width="56" alt="Skills">
-                        </div>
-                          @endforeach
-                       {{--  <div class="col-md-6 mt-4 mt-md-0">
-                            <span class="badge badge-soft-dark px-4 py-2 fs-0 mb-4 ls text-900 shadow">Backend</span>
-                            @foreach($backendSkills as $key => $skill)
-                             <div class="media mb-4 pl-md-2">
-                                <img class="align-self-start mr-3" src="{{$skill['image']}}" alt="..." width="56">
-                                <div class="media-body">
-                                    <h5 class="font-weight-bold">{{$skill['title']}}</h5>
-                                      <div class="description fs-md-0 fs--1">
-                                        <p class="text-justify">{{$skill['description']}}</p>
-                                        <a class="text-main font-weight-bold" href="{{$skill['link']}}">View Documentation <span class="fas fa-chevron-right fs--1" data-fa-transform="down-2 shrink-5 right-4"></span>
-                                        </a>
-                                      </div>
+                        <div class="card-group">
+                            @foreach($skills as $key => $skill)
+                                <div class="card card-hover border-0">
+                                    <div class="card-body d-flex align-items-center justify-content-center">
+                                         <img class="img-fluid" src="{{$skill['image']}}" width="56" alt="Skills">
+                                    </div>
                                 </div>
-                            </div>
-                             @endforeach
-                        </div>  --}}
-
+                            @endforeach
+                        </div>
                     </div>
                 </div>
 
-                <div class="my-portfolio mt-6 text-center text-md-left">
-                    <h1 class="heading-underline heading-underline-2 text-900">My <span class="text-main">Portfolio</span> </h1>
-                     <p class="mt-2 text-justify fs-md-0 fs--1 text-center text-md-left">
-                       See some of my works below. Developing & Co-developing these projects made me love with the technologies I/we used.Hover on image to see the full page view.
-                     </p>
+                <div class="my-portfolio mt-6 row text-center text-md-left">
+                    <div class="row">
+                        <div class=" col">
+                            <h2 class=" text-main">My Portfolio</h2>
+                        </div>
+                        <div class="col-auto">
+                            <a href="/portfolio" class="btn btn-outline-main btn-icon-hover">
+                                View All
+                            <span class="fas fa-arrow-right"></span>
+                            </a>
+                        </div>
+                        </div>
+                      <div class="row">
+                            <div class="col-md-7">
+                                <p class="mt-2 text-justify fs-md-0 fs--1 text-center text-md-left">
+                                    See some of my works below. Developing & Co-developing these projects made me love with the technologies I/we used.Hover on image to see the full page view.
+                                </p>
+                            </div>
+                      </div>
+
                      <div class="mt-6">
                         <div class="row">
                          @foreach ($projects as $project)
-                            <div class="col-sm-6 col-lg-6 mb-6 mb-lg-4">
-                                <div class="pic-scroll rounded-soft text-center">
-                                    <img class="img-fluid" src="{{url($project['image'])}}" alt="Image" />
+                            <div class="col-sm-5 col-lg-5 mb-6 mb-lg-4">
+                                <div class="rounded-soft text-center position-relative">
+                                    <div class="pic-scroll shadow rounded-soft">
+                                        <img class="img-fluid" src="{{url($project['image'])}}" alt="Image" />
+                                    </div>
+                                        <div class="resource-kit rounded shadow">
+                                            <ul class="nav">
+                                                  @foreach ($project['technologies'] as $technology)
+                                                <li>
+                                                    <a class="avatar avatar-skill btn btn-outline-light border-0 p-1" href="">
+                                                        <img src="{{url('/assets/images/'.$technology.'.png')}}" alt="HTML" width="100" class="object-fit-none">
+                                                    </a>
+                                                </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
                                 </div>
                                 <div class="product-name mt-3">
                                     <h5 class="mb-2 mb-md-1">
                                             <a href="{{ $project['link'] }}" class="text-900 ">
                                             {{ $project['title'] }}
                                         </a>
-                                        </h5>
-                                        <p class="fs--1 text-justify text-700 text-center text-md-left">{{ $project['description'] }}</p>
-                                    </div>
+                                    </h5>
+                                    <p class="fs--1 text-justify text-700 text-center text-md-left">{{ $project['description'] }}</p>
+                                </div>
                             </div>
                             @endforeach
-                            <div class="col-12 mb-4 d-flex justify-content-center">
-                               <a href="/portfolio" class="btn btn-outline-main btn-icon-hover">
-                                    View More
-                                    <span class="fas fa-arrow-right"></span>
-                                    </a>
-                            </div>
                         </div>
                     </div>
                 </div>
