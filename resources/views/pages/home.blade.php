@@ -107,21 +107,18 @@
                 </div>
                 <div class="introduction text-center text-md-left">
                     <h1 class=" text-main">Hey there!</h1>
-
-                        <div class="row">
-                            <div class="col-md-7">
-                                 <p class="mt-2 text-justify fs-main">
-                                        I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps and websites.
-                                I have worked with various technologies most of them are based on <span>PHP</span> and <span>Javascript.</span>
-                                I have <span>maintained, developed and launched</span> multiple
-                                projects
-                                from scratch, carrying the development of it's
-                                <span>back-end</span> and <span>front-end</span> codebases.
-                             </p>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                                <p class="mt-2 text-justify fs-main">
+                                    I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps and websites.
+                            I have worked with various technologies most of them are based on <span>PHP</span> and <span>Javascript.</span>
+                            I have <span>maintained, developed and launched</span> multiple
+                            projects
+                            from scratch, carrying the development of it's
+                            <span>back-end</span> and <span>front-end</span> codebases.
+                            </p>
                         </div>
-
-
+                    </div>
                 </div>
                 <div class="skills mt-md-6 mt-5">
                     <div class="text-center text-md-left">
@@ -133,10 +130,11 @@
                     <div class="align-items-center justify-content-center justify-content-md-start mt-5 row">
                         <div class="card-group">
                             @foreach($skills as $key => $skill)
-                                <div class="card card-hover border-0">
+                                <div class="card card-hover border-0 text-center">
                                     <div class="card-body d-flex align-items-center justify-content-center">
                                          <img class="img-fluid" src="{{$skill['image']}}" width="56" alt="Skills">
                                     </div>
+                                    <h6>{{ $skill['title'] }}</h6>
                                 </div>
                             @endforeach
                         </div>
@@ -166,7 +164,7 @@
                      <div class="mt-6">
                         <div class="row">
                          @foreach ($projects as $project)
-                            <div class="col-sm-5 col-lg-5 mb-6 mb-lg-4">
+                            <div class="col-sm-6 col-lg-6 mb-6 @if($loop->odd) pr-md-4 @else pl-md-4 @endif">
                                 <div class="rounded-soft text-center position-relative">
                                     <div class="pic-scroll shadow rounded-soft">
                                         <img class="img-fluid" src="{{url($project['image'])}}" alt="Image" />
@@ -196,80 +194,64 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="hire-me mt-6 text-center text-md-left">
-                    <h1 class="heading-underline heading-underline-2 text-900">Hire <span class="text-main">Me!</span> </h1>
-                     <p class="mt-2 text-justify text-center text-md-left">
-                     I can help you in your project by
-                     </p>
-                     <div class="row mt-4">
-                        <div class="col-sm-6 col-lg-4 mb-3 mb-sm-4">
-                            <div class="d-flex px-md-4">
-                                <div class="flex-shrink-0 d-none d-md-block">
-                                    <span>—</span>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h4>Development</h4>
-                                    <p>Developing or co-developing back-end & front end.</p>
+                 <div class="card bg-main mx-md-7 mt-4 mb-7" style="background-image: url(/assets/images/pattern.svg);">
+                    <div class="card-body">
+                        <div class="row p-4">
+                            <div class="col-md-6 border-right">
+                                <div class="pl-md-6">
+                                     <h1 class="text-white mt-3">Hire Me</h1>
+                                     <p class="text-justify pr-md-6 text-white">
+                                         Want me to work on your amazing web application? Lets Talk!
+                                     </p>
                                 </div>
                             </div>
-                         </div>
+                            <div class="col-md-6 pl-md-6">
+                                <div class="media align-items-center mb-2">
+                                    <div class="avatar avatar-xl pt-1">
+                                          <i class="fas fa-envelope social-link"></i>
+                                    </div>
+                                    <div class="media-body ml-2 social-text">
+                                        <a href="mailto:farhanhaque.lu@gmail.com" class="text-white mx-1"> farhanhaque.lu@gmail.com </a>
+                                    </div>
+                                </div>
+                                 <div class="media align-items-center mb-2">
+                                    <div class="avatar avatar-xl pt-1">
+                                          <i class="fab fa-linkedin social-link"></i>
+                                    </div>
+                                    <div class="media-body ml-2 social-text">
+                                       <a target="_blank" href="https://www.linkedin.com/in/ahsanul-haque-farhan-90052619b/" class="text-white mx-1">
+                                            ahsanul-haque-farhan-90052619b
+                                          </a>
+                                    </div>
+                                </div>
+                                <div class="media align-items-center mb-2">
+                                    <div class="avatar avatar-xl pt-1">
+                                            <i class="fab fa-github-square social-link"></i>
+                                    </div>
+                                    <div class="media-body ml-2 social-text">
+                                       <a target="_blank" href="https://github.com/haque-farhan" class="text-white mx-1">
+                                        haque-farhan
+                                       </a>
+                                    </div>
+                                </div>
 
-                        <div class="col-sm-6 col-lg-4 mb-3 mb-sm-4">
-                            <div class="d-flex px-md-4">
-                                <div class="flex-shrink-0 d-none d-md-block">
-                                <span>—</span>
+                                <div class="media align-items-center mb-2">
+                                    <div class="avatar avatar-xl pt-1">
+                                         <i class="fab fa-facebook-square social-link"></i>
+                                    </div>
+                                    <div class="media-body ml-2 social-text">
+                                        <a target="_blank" href="https://www.facebook.com/ahsanulf" class="text-white mx-1">
+                                            www.facebook.com/ahsanulf
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="flex-grow-1 ms-3">
-                                <h4>Support</h4>
-                                <p>Monitoring or supporting projects.</p>
-                                </div>
+
                             </div>
                         </div>
-
-                        <div class="w-100"></div>
-
-                    <div class="col-sm-6 col-lg-4 mb-3 mb-sm-4">
-                            <div class="d-flex px-md-4">
-                                <div class="flex-shrink-0 d-none d-md-block">
-                                <span>—</span>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                <h4>Existing Codebase</h4>
-                                <p>Updating existing codebase.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mb-3 mb-sm-4">
-                            <div class="d-flex px-md-4">
-                                <div class="flex-shrink-0 d-none d-md-block">
-                                <span>—</span>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                <h4>Fixing Bugs</h4>
-                                <p>Fixing major and minor bugs.</p>
-                                </div>
-                            </div>
-                        </div>
-
 
                     </div>
-
-                    <p class="mt-4 text-justify text-center text-md-left">
-                        Want me to work on you amazing web application ? <span class="text-main">Lets Talk !</span>
-                    </p>
-                      <div class="mt-3 mb-6">
-                          <dl class="row">
-                            <dt class="col-sm-4">PHONE</dt>
-                            <dd class="col-sm-8">+88 01710212329</dd>
-                            <dt class="col-sm-4">EMAIL</dt>
-                            <dd class="col-sm-8">farhanhaque.lu@gmail.com</dd>
-                        </dl>
-                      </div>
                 </div>
-                <div class="col text-center border-top border-200 py-4">
-              <p class="mb-0 font-weight-semi-bold">Thanks for visiting</p>
-            </div>
             </div>
         </div>
+    </div>
 @endsection

@@ -25,21 +25,16 @@
     {{-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarCollapse">
         <i class="fas fa-bars"></i>
     </button> --}}
-    <div class="d-none d-md-block" id="sidebarCollapse">
-        <div class="text-white mt-md-4">
-            <div class="d-none d-md-block px-3">
-                <div class="media align-items-center">
-                    <div class="avatar avatar-4xl">
+    <div class="d-none d-md-block w-100" id="sidebarCollapse">
+        <div class="text-white mt-md-4 text-center">
+            <div class="d-none d-md-block ">
+                <div class="avatar avatar-4xl">
                     <img src="{{url('/assets/images/farhan.jpg')}}" alt="profile picture" class="rounded-circle">
                 </div>
-                    <div class="media-body ml-3">
                 <h5 class="">
                     Ahsanul Haque Farhan
                 </h5>
                 <p >Full-stack Web Developer</p>
-                    </div>
-                </div>
-
             </div>
 
             <div class="navbar-nav flex-column  mt-md-5">
