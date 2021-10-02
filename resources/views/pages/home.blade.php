@@ -98,18 +98,20 @@
     <div class="main-content mt-5">
         <div class="container">
               <div>
-                <div class="d-md-none text-center mb-5">
-                    <img src="{{url('/assets/images/farhan.jpg')}}" alt="profile picture" style="width: 25%" class="img-fluid rounded-soft">
-                    <h5 class="mt-3 font-weight-semi-bold">
-                    Ahsanul Haque Farhan
-                    </h5>
-                    <p class="font-weight-semi-bold">Full-stack web developer</p>
+                 <div class="d-md-none text-center mb-6">
+                <div class="avatar avatar-4xl">
+                    <img src="{{url('/assets/images/farhan.jpg')}}" alt="profile picture" class="rounded-circle img-thumbnail">
                 </div>
+                <h5 class="">
+                    Ahsanul Haque Farhan
+                </h5>
+                <p >Full-stack Web Developer</p>
+            </div>
                 <div class="introduction text-center text-md-left">
                     <h1 class=" text-main">Hey there!</h1>
                     <div class="row">
                         <div class="col-md-7">
-                                <p class="mt-2 text-justify fs-main">
+                                <p class="mt-2 text-justify fs-main fs-md-main">
                                     I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps and websites.
                             I have worked with various technologies most of them are based on <span>PHP</span> and <span>Javascript.</span>
                             I have <span>maintained, developed and launched</span> multiple
@@ -127,28 +129,37 @@
                             Below is a quick overview of my main technical skill sets and tools I use.
                         </p>
                     </div>
-                    <div class="align-items-center justify-content-center justify-content-md-start mt-5 row">
+                    <div class="d-none d-md-block">
                         <div class="card-group">
-                            @foreach($skills as $key => $skill)
-                                <div class="card card-hover border-0 text-center">
-                                    <div class="card-body d-flex align-items-center justify-content-center">
-                                         <img class="img-fluid" src="{{$skill['image']}}" width="56" alt="Skills">
-                                    </div>
-                                    <h6>{{ $skill['title'] }}</h6>
+                        @foreach($skills as $key => $skill)
+                            <div class="card card-hover border-0 text-md-center">
+                                <div class="card-body d-md-flex align-items-center justify-content-center">
+                                        <img class="img-fluid" src="{{$skill['image']}}" width="56" alt="Skills">
                                 </div>
-                            @endforeach
+                                <h6 class="text-center d-none d-md-block">{{ $skill['title'] }}</h6>
+                            </div>
+                        @endforeach
                         </div>
+                    </div>
+                    <div class="d-md-none d-flex flex-wrap justify-content-center align-items-center mt-4">
+                        @foreach($skills as $key => $skill)
+                                <div class="card card-hover border-0 text-md-center">
+                                    <div class="card-body">
+                                            <img class="img-fluid" src="{{$skill['image']}}" width="56" alt="Skills">
+                                    </div>
+                                </div>
+                        @endforeach
                     </div>
                 </div>
 
-                <div class="my-portfolio mt-6 row text-center text-md-left">
+                <div class="my-portfolio mt-8 row text-center text-md-left">
                     <div class="row">
                         <div class=" col">
                             <h2 class=" text-main">My Portfolio</h2>
                         </div>
-                        <div class="col-auto">
-                            <a href="/portfolio" class="btn btn-outline-main btn-icon-hover">
-                                View All
+                        <div class="col-auto d-md-block d-none">
+                            <a href="/portfolio" class="btn btn-main btn-icon-hover">
+                                View Details
                             <span class="fas fa-arrow-right"></span>
                             </a>
                         </div>
@@ -158,6 +169,9 @@
                                 <p class="mt-2 text-justify fs-md-0 fs--1 text-center text-md-left">
                                     See some of my works below. Developing & Co-developing these projects made me love with the technologies I/we used.Hover on image to see the full page view.
                                 </p>
+                                 <a href="/portfolio" class="btn btn-light text-main d-md-none">
+                                    View Details &rarr;
+                                </a>
                             </div>
                       </div>
 
@@ -194,13 +208,13 @@
                         </div>
                     </div>
                 </div>
-                 <div class="card bg-main mx-md-7 mt-4 mb-7" style="background-image: url(/assets/images/pattern.svg);">
+                 <div class="card bg-main mx-md-7 mt-4 mb-8" style="background-image: url(/assets/images/pattern.svg);">
                     <div class="card-body">
                         <div class="row p-4">
-                            <div class="col-md-6 border-right">
+                            <div class="col-md-6">
                                 <div class="pl-md-6">
-                                     <h1 class="text-white mt-3">Hire Me</h1>
-                                     <p class="text-justify pr-md-6 text-white">
+                                     <h1 class="text-white mt-3 text-md-left text-center">Hire Me</h1>
+                                     <p class="text-justify pr-md-6 text-white text-md-left text-center fs-md-0 fs--1">
                                          Want me to work on your amazing web application? Lets Talk!
                                      </p>
                                 </div>

@@ -23,27 +23,67 @@
         @endif--}}
         <div class="container">
             <div class="my-portfolio mb-6">
-            <h1 class="heading-underline heading-underline-2 text-900">Contact <span class="text-main">Me</span> </h1>
+            <h1 class="text-main">Contact Me </h1>
             <p class="mt-2 text-justify">
                 I am available for hire and open to any ideas of cooperation.            </p>
         </div>
-            <div class="mt-2">
-                <table class="table table-borderless">
-                    <tbody>
-                    @foreach($contact_info as $info)
-                        <tr>
-                            <td>{{$info['medium']}} :</td>
-                            <td class="text-danger">
-                                <a target="_blank" class="text-decoration-none text-danger" href="{{$info['link']}}">
-                                    <span class="me-2"><i class="{{$info['icon']}}"></i></span>
-                                    {{$info['text']}}
-                                </a>
-                            </td>
-                        </tr>
-                    @endforeach
-                    </tbody>
-                </table>
-            </div>
+              <div class="card bg-main mx-md-7 mt-4 mb-7" style="background-image: url(/assets/images/pattern.svg);">
+                    <div class="card-body">
+                        <div class="row p-4">
+                            <div class="col-md-6">
+                                <div class="pl-md-6">
+                                     <h1 class="text-white mt-3">Hire Me</h1>
+                                     <p class="text-justify pr-md-6 text-white">
+                                         Want me to work on your amazing web application? Lets Talk!
+                                     </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 pl-md-6">
+                                <div class="media align-items-center mb-2">
+                                    <div class="avatar avatar-xl pt-1">
+                                          <i class="fas fa-envelope social-link"></i>
+                                    </div>
+                                    <div class="media-body ml-2 social-text">
+                                        <a href="mailto:farhanhaque.lu@gmail.com" class="text-white mx-1"> farhanhaque.lu@gmail.com </a>
+                                    </div>
+                                </div>
+                                 <div class="media align-items-center mb-2">
+                                    <div class="avatar avatar-xl pt-1">
+                                          <i class="fab fa-linkedin social-link"></i>
+                                    </div>
+                                    <div class="media-body ml-2 social-text">
+                                       <a target="_blank" href="https://www.linkedin.com/in/ahsanul-haque-farhan-90052619b/" class="text-white mx-1">
+                                            ahsanul-haque-farhan-90052619b
+                                          </a>
+                                    </div>
+                                </div>
+                                <div class="media align-items-center mb-2">
+                                    <div class="avatar avatar-xl pt-1">
+                                            <i class="fab fa-github-square social-link"></i>
+                                    </div>
+                                    <div class="media-body ml-2 social-text">
+                                       <a target="_blank" href="https://github.com/haque-farhan" class="text-white mx-1">
+                                        haque-farhan
+                                       </a>
+                                    </div>
+                                </div>
+
+                                <div class="media align-items-center mb-2">
+                                    <div class="avatar avatar-xl pt-1">
+                                         <i class="fab fa-facebook-square social-link"></i>
+                                    </div>
+                                    <div class="media-body ml-2 social-text">
+                                        <a target="_blank" href="https://www.facebook.com/ahsanulf" class="text-white mx-1">
+                                            www.facebook.com/ahsanulf
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
         </div>
         {{--  <div class="container">
             <div class="row mt-6">

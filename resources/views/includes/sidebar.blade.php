@@ -14,7 +14,7 @@
         @foreach($pages as $page)
             <li class="nav-item px-1">
                 <a href="{{$page['link']}}"
-                class="sidebar-item ls-1 nav-link px-2 {{ request()->is($page['link']) ? 'active' : '' }} ">
+                class="sidebar-item nav-link px-2 {{ request()->is($page['link']) ? 'active' : '' }} ">
                 <span class="{{$page['icon']}}"></span>
                 <span class="d-block"> {{$page['title']}}</span>
                 </a>
@@ -52,20 +52,22 @@
                 @endforeach
             </div>
 
-            <div class="mt-5 fs-5 text-white px-2 d-none d-md-block">
-                <p style="font-size: 10px;color: #ccc">GET IN TOUCH</p>
-                <a href="mailto:farhanhaque.lu@gmail.com" class="social-link mx-1">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/ahsanul-haque-farhan-90052619b/" class="social-link mx-1">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a target="_blank" href="https://github.com/haque-farhan" class="social-link mx-1">
-                    <i class="fab fa-github-square"></i>
-                </a>
-                <a target="_blank" href="https://www.facebook.com/ahsanulf" class="social-link mx-1">
-                    <i class="fab fa-facebook-square"></i>
-                </a>
+            <div class=" text-white px-2 d-none d-md-block bottom-20 left-80 position-fixed">
+                <div class="text-center">
+                    <p>GET IN TOUCH</p>
+                    <a href="mailto:farhanhaque.lu@gmail.com" class="social-link mx-1">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/ahsanul-haque-farhan-90052619b/" class="social-link mx-1">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://github.com/haque-farhan" class="social-link mx-1">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/ahsanulf" class="social-link mx-1">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

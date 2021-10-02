@@ -98,12 +98,17 @@
     <div class="main-content mt-5">
         <div class="container">
         <div class="my-portfolio mb-6 text-center text-md-left">
-            <h1 class="heading-underline heading-underline-2 text-900">
-                My <span class="text-main">Portfolio</span>
+            <h1 class="text-main">
+                My Portfolio
             </h1>
-            <p class="mt-2 text-justify text-center text-md-left">
+            <div class="row">
+                <div class="col-md-7">
+ <p class="mt-2 text-justify text-center text-md-left">
             I have been Developing & Co-developing these projects in the last couple of years. See some of my work descriptions below. Hover on images to see the full pageview.
             </p>
+                </div>
+            </div>
+
         </div>
             @foreach($projects as $project)
                 <div class="mt-md-4">
@@ -115,9 +120,9 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-md-6">
-                            <h3 class="text-900">
-                                <a href="{{$project['link']}}" class="text-decoration-none text-black hover-danger">{{$project['title']}}</a>
+                        <div class="col-md-6 pr-md-6">
+                            <h3 class="">
+                                <a href="{{$project['link']}}" class="text-decoration-none text-main hover-danger">{{$project['title']}}</a>
                             </h3>
                             <h6 class="mb-4 font-weight-thin">{{$project['sub_title']}}</h6>
                             <p class="text-700 mt-3 mb-4 text-justify pr-md-2 fs-md-0 fs--1">{{$project['description']}}</p>
