@@ -116,7 +116,7 @@
                          <div class="col-md-6 d-md-none mb-3">
                             <a target="_blank" href="{{ $project['link'] }}">
                                  <div class="pic-scroll shadow rounded-soft text-center">
-                                    <img class="img-fluid" src="{{url($project['image'])}}" alt="Project Image" />
+                                    <img class="img-fluid" src="{{url($project['image'])}}" alt="Image" />
                                 </div>
                             </a>
                         </div>
