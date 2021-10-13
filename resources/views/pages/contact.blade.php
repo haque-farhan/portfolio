@@ -11,7 +11,7 @@
 @extends('layouts.default')
 
 @section('title')
-    <title>Contact - Ahsanul Haque Farhan - Full-Stack Developer</title>
+    <title>About - Ahsanul Haque Farhan - Full-Stack Developer</title>
 @endsection
 
 @section('content')
@@ -23,9 +23,46 @@
         @endif--}}
         <div class="container">
             <div class="my-portfolio mb-6">
-            <h1 class="text-main">Contact Me </h1>
+            <h1 class="text-main">About Me </h1>
             <p class="mt-2 text-justify">
-                I am available for hire and open to any ideas of cooperation.            </p>
+              I am available for hire and open to any ideas of cooperation.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-body border-dashed-bottom">
+                <div class="about-row">
+                    <h3 class="about-tittle text-primary">
+                        MSc in Data Analytics
+                    </h3>
+                    <p class="about-info text-900">De Montfort University Leicester, United Kingdom</p>
+                    <p class="text-800">October, 2021 — Present</p>
+                    <div class="opacity-box">
+                        <p>
+                            {{--  Studied Computer Science &amp; Engineering to learn programming, software development,
+                            software architecture. Participated and won prizes in numerus national programming
+                            contests and idea contests.  --}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body mt-3">
+                <div class="about-row">
+                    <h3 class="about-tittle text-primary">
+                        BSc in Computer Science &amp; Engineering
+                    </h3>
+                    <p class="about-info text-900">Leading University, Sylhet</p>
+                    <p class="text-800">Jan, 2015 — Dec, 2018</p>
+                    <div class="opacity-box">
+                        <p>
+                            Studied Computer Science &amp; Engineering to learn programming, software development,
+                            software architecture. Participated and won prizes in numerus national programming
+                            contests and idea contests.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
               <div class="card bg-main mx-md-7 mt-4 mb-7" style="background-image: url(/assets/images/pattern.svg);">
                     <div class="card-body">

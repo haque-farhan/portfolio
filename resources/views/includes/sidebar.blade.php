@@ -2,7 +2,7 @@
     $pages = [
         ['title' => 'Homepage', 'icon' => 'fas fa-home', 'link' => '/'],
         ['title' => 'Portfolio', 'icon' => 'fas fa-user', 'link' => 'portfolio'],
-        ['title' => 'Contact me', 'icon' => 'fas fa-phone', 'link' => 'contact'],
+        ['title' => 'About me', 'icon' => 'fas fa-phone', 'link' => 'contact'],
         ['title' => 'My CV', 'icon' => 'fas fa-file', 'link' => 'cv',],
     ];
 @endphp
