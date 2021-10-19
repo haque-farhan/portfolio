@@ -182,6 +182,7 @@ body {
     -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
 }
+
 .absolute-vertical-center {
     position: absolute;
     top: 50%;

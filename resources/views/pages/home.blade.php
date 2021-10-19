@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @section('title')
-    <title>Ahsanul Haque Farhan - Full-Stack Developer</title>
+    <title>Ahsanul Haque Farhan - Full-Stack Web Developer</title>
 @endsection
 
 @php
