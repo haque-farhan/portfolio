@@ -19,9 +19,9 @@
 {{--Facebook sharing--}}
 <meta property="og:url"                content="farhanhaq.com" />
 <meta property="og:type"               content="article" />
-<meta property="og:title"              content="Farhan - Full Stack Developer" />
+<meta property="og:title"              content="Farhan - Full-stack Web Developer" />
 <meta property="og:description"        content="Looking for someone who can build or cooperate in the development of your amazing Web Application? I am available & open to any ideas of cooperation." />
-<meta property="og:image"              content="http://farhanhaq.com/assets/images/farhan.jpg" />
+<meta property="og:image"              content="http://farhanhaq.com/assets/images/avatar.jpg" />
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8WH3FHB8V9"></script>

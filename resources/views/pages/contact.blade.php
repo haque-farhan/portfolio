@@ -28,13 +28,71 @@
               I am available for hire and open to any ideas of cooperation.
             </p>
         </div>
-
+        <div class="">
+            <div class="media mb-4 mt-3">
+                <span class="fa-stack mr-2 ml-n1">
+                    <i class="fas fa-circle fa-stack-2x text-300"></i>
+               </span>
+            <div class="media-body">
+              <h4 class="mb-0 text-primary position-relative">
+                  <span class="bg-200 pr-3">Experience</span>
+                  <span class="border position-absolute absolute-vertical-center w-100 z-index--1 l-0"></span>
+                </h4>
+              <p class="mb-0">Below is a overview of Experiences</p>
+            </div>
+          </div>
+        </div>
         <div class="card">
             <div class="card-body border-dashed-bottom">
                 <div class="about-row">
-                    <h3 class="about-tittle text-primary">
+                    <h5 class="about-tittle text-black">
+                        Technext Limited
+                    </h5>
+                    <p class="about-info text-900">Software Engineer</p>
+                    <p class="text-800">February 2019 - March 2021</p>
+                    <div class="opacity-box">
+                        <p>
+                            Worked with core software development team responsible for building software to ensure the best user experience and software security used by millions of users.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body mt-3">
+                <div class="about-row">
+                    <h5 class="about-tittle text-black">
+                       Appifylab
+                    </h5>
+                    <p class="about-info text-900">Intership</p>
+                    <p class="text-800">June 2018 - December 2018</p>
+                    <div class="opacity-box">
+                        <p>
+                            Worked on several projects with the team. Most of the projects based on PHP, Laravel, Vue js
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mt-6">
+            <div class="media mb-4 mt-3">
+                <span class="fa-stack mr-2 ml-n1">
+                    <i class="fas fa-circle fa-stack-2x text-300"></i>
+               </span>
+            <div class="media-body">
+              <h4 class="mb-0 text-primary position-relative">
+                  <span class="bg-200 pr-3">Educational Background</span>
+                  <span class="border position-absolute absolute-vertical-center w-100 z-index--1 l-0"></span>
+                </h4>
+              <p class="mb-0">Below is a quick overview of my academic qualifications</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-body border-dashed-bottom">
+                <div class="about-row">
+                    <h5 class="about-tittle text-black">
                         MSc in Data Analytics
-                    </h3>
+                    </h5>
                     <p class="about-info text-900">De Montfort University Leicester, United Kingdom</p>
                     <p class="text-800">October, 2021 — Present</p>
                     <div class="opacity-box">
@@ -48,9 +106,9 @@
             </div>
             <div class="card-body mt-3">
                 <div class="about-row">
-                    <h3 class="about-tittle text-primary">
-                        BSc in Computer Science &amp; Engineering
-                    </h3>
+                    <h5 class="about-tittle text-black">
+                       BSc in Computer Science &amp; Engineering
+                    </h5>
                     <p class="about-info text-900">Leading University, Sylhet</p>
                     <p class="text-800">Jan, 2015 — Dec, 2018</p>
                     <div class="opacity-box">
