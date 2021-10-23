@@ -36,9 +36,9 @@
             <div class="media-body">
               <h4 class="mb-0 text-primary position-relative">
                   <span class="bg-200 pr-3">Experience</span>
-                  <span class="border position-absolute absolute-vertical-center w-100 z-index--1 l-0"></span>
+                  <span class="border position-absolute absolute-vertical-center w-75 z-index--1 l-0"></span>
                 </h4>
-              <p class="mb-0">Below is a overview of Experiences</p>
+              <p class="mb-0">Below is a overview of my experiences</p>
             </div>
           </div>
         </div>
@@ -81,9 +81,9 @@
             <div class="media-body">
               <h4 class="mb-0 text-primary position-relative">
                   <span class="bg-200 pr-3">Educational Background</span>
-                  <span class="border position-absolute absolute-vertical-center w-100 z-index--1 l-0"></span>
+                  <span class="border position-absolute absolute-vertical-center w-75 z-index--1 l-0"></span>
                 </h4>
-              <p class="mb-0">Below is a quick overview of my academic qualifications</p>
+              <p class="mb-0">Below is a overview of my academic qualifications</p>
             </div>
           </div>
         </div>
