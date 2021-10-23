@@ -158,7 +158,7 @@
                         @if(!$loop->last)
                             <hr class="my-4 my-lg-5">
                         @else
-                            <span class="mb-5"></span>
+                            <span class="mb-7"></span>
                         @endif
                     </div>
                 </div>
