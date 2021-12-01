@@ -3,7 +3,7 @@
         ['title' => 'Homepage', 'icon' => 'fas fa-home', 'link' => '/'],
         ['title' => 'Portfolio', 'icon' => 'fas fa-user', 'link' => 'portfolio'],
         ['title' => 'About me', 'icon' => 'fas fa-phone', 'link' => 'contact'],
-        ['title' => 'My CV', 'icon' => 'fas fa-file', 'link' => 'cv',],
+        ['title' => 'My CV', 'icon' => 'fas fa-file', 'link' => 'assets/file/myresume.pdf',],
     ];
 @endphp
 

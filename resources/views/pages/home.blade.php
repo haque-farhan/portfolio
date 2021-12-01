@@ -120,6 +120,12 @@
                             <span>back-end</span> and <span>front-end</span> codebases.
                             </p>
                         </div>
+                        <div class="mt-2 text-uppercase">
+                            <a href="/assets/file/myresume.pdf" class="btn btn-link p-0">
+                                Download my CV
+                            <span class="fas fa-angle-right ml-1"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="skills mt-md-6 mt-5">
