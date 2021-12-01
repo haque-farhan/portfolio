@@ -33,7 +33,7 @@
                "title" => "CodeIgniter",
                "link" => "https://codeigniter.com/",
                "description" => "CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications.",
-               "image" => "https://codeigniter.com/assets/images/ci-logo-big.png",
+               "image" => "https://codeigniter.com/assets/icons/ci-footer.png",
         ],
          [
                "title" => "MySQL",
