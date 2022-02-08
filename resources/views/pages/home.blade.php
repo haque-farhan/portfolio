@@ -121,7 +121,7 @@
                             </p>
                         </div>
                         <div class="mt-2 text-uppercase">
-                            <a href="/assets/file/myresume.pdf" class="btn btn-link p-0">
+                            <a href="/assets/file/farhansCV.pdf" class="btn btn-link p-0">
                                 Download my CV
                             <span class="fas fa-angle-right ml-1"></span>
                             </a>
