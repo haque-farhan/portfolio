@@ -15,7 +15,7 @@
                "title" => "Vue js",
                "link" => "https://vuejs.org/",
                "description" => "Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. ",
-               "image" => "https://vuejs.org/images/logo.svg",
+               "image" => "https://avatars.githubusercontent.com/u/6128107?s=280&v=4",
         ],
         [
                "title" => "React js",
